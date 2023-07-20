@@ -38,6 +38,9 @@
 // getAnimes()
 
 
+const cleanView = () => {
+    main.innerHTML="";
+}
 
 async function getAnimes() {
     try{
@@ -98,3 +101,22 @@ async function getAnimes() {
 getAnimes()
 
 
+
+
+// const searchInput = document.querySelector("#search-input");
+
+// searchInput.addEventListener("keyup",() => {
+//     const inputText = searchInput.value;
+//     let anime2 = searchByName(inputText);
+//     cleanView();
+
+// });
+
+
+// function searchAnime(){
+//     const getData=async()=> {
+//         const res = await fetch(`https://api.jikan.moe/v4/anime?q=${search}&limit=20`)
+//         const resData = await res.json()
+//         console.log(resData);
+//     }
+// }
