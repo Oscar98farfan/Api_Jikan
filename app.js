@@ -39,8 +39,6 @@
 
 
 
-
-
 async function getAnimes() {
     try{
         const globalAnimePromises = [];
@@ -76,10 +74,10 @@ async function getAnimes() {
                 
                 const animeDetailsContainer = document.createRange().createContextualFragment(/*html*/`
                 <div class="container">
+                    <h1> Titulo: ${animeTitle}</h1>
                     <div class="image-container">
                         <img src="${animeImageUrl}" alt="${animeTitle}">
                     </div>
-                    <h1> Titulo: ${animeTitle}</h1>
                     <h2> Sinopsis:</h2>
                     <p>${animeSynopsis}</p>
                     <h3>No. de episodeos: ${animeEpisodes}</h3>
